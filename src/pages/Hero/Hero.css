@@ -1,0 +1,97 @@
+.hero-section {
+    padding: 150px 0 250px 0;
+    width: 100%;
+display: flex;    
+background-image: linear-gradient( 20deg, rgba(43, 43, 43, 0.8), rgba(47, 33, 65, 0.7) ), url("../../Images/Travel.jpg");
+background-size: cover;
+line-height: 50px;
+
+}
+.hero-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+}
+.text-container > h1 {
+    font-size: 3rem;
+   
+    color: #ffffffb3;
+    
+}
+.text-container > h2 {
+    font-style: italic;
+    color: #b4b4b4b3;
+}
+.text-container > h1, .text-container > h2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    
+}
+
+.outline {
+    height: 3.5rem;
+margin: 2rem;
+font-size: 1rem;
+width: 11rem;
+    color: blueviolet;
+    background: transparent;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    transition: 0.2s;
+    font-size: 1.2rem;
+}
+.outline:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.solid {
+    height: 3.5rem;
+margin: 2rem;
+font-size: 1.2rem;
+width: 11rem;
+    color: rgb(255, 255, 255);
+    background: blueviolet;
+   border: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.solid:hover {
+background: transparent;
+color: blueviolet;
+border: 1px solid blueviolet;
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.text-container > h1 {
+        font-size: 1.3rem;
+        width: 21rem;
+    }
+    .text-container > h2 {
+        font-size: 1.2rem;
+       
+    }
+   
+    .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    } 
+    .solid, .outline {
+        width: 16rem;
+        margin-bottom: -0.25rem;
+    }
+}

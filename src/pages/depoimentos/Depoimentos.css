@@ -1,0 +1,94 @@
+
+
+
+.section-depoimentos {
+    padding: 80px 10px 100px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.section-depoimentos > h1 {
+    color: rgb(93, 25, 156);
+}
+.bar2 {
+    width: 6rem;
+    border-bottom: 3px solid rgb(106, 34, 173);
+    display: block;
+    margin-bottom: 4rem
+}
+.left-arrow, .right-arrow {
+
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.img-arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+    
+}
+.left-arrow:hover, .right-arrow:hover {
+    color:blueviolet;
+}
+
+
+
+.pic-container {
+    
+width: 18rem;
+height: 21rem;
+
+
+
+}
+
+
+.img1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid blueviolet;
+}
+
+.section-depoimentos > p {
+    margin: 0 10rem 0 10rem;
+    color: #4e4e4e;
+}
+.section-depoimentos > h3 {
+   color: blueviolet;
+}
+
+.p1 {
+    padding-bottom: 2rem
+}
+.p2 {
+    width: 50rem;
+}
+
+@media only screen and (max-width: 950px) {
+	.section-depoimentos > p {
+		width: 100%;
+	} 
+.img-arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0rem 2rem 0rem;
+}
+.p2 {
+    font-size: 0.8rem;
+}
+.img1 {
+    width: 90%;
+    height: 90%;
+    
+}
+}

@@ -1,0 +1,162 @@
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 80px;
+	background: transparent;
+	color: white;
+	transition: 0.4s;
+ font-size: 1.2rem;
+ width: 100%;
+ position: fixed;
+ font-weight: 500;
+ overflow: hidden;
+
+}
+.nav-header > a > img {
+	width: 240px;
+}
+.activated {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	background: white;
+	color: rgb(0, 0, 0);
+ font-size: 1.2rem;
+ width: 100%;
+ padding-left: 2rem;
+ transition: 0.4s;
+ position: fixed;
+ box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+ overflow: hidden;
+}
+.nav {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	
+	
+	padding-left: 7rem;
+	
+}
+
+.nav > a {
+	margin: 0 1rem;
+	transition: 0.2s;
+	text-decoration: none;
+	color: black;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	
+	
+}
+/* he is selecting a, but is also selects the <Link> tag*/
+.nav-ul > li:hover { 
+	color: blueviolet;
+	text-decoration: none;
+	cursor: pointer;
+}
+.nav-ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+	
+	
+}
+
+.nav-ul li .active {
+	color: blueviolet;
+	text-decoration: none;
+}
+.nav-header .nav-btn, .activated .nav-btn {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+.nav-close-btn > div,
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.nav-header .nav-btn, .activated .nav-btn {
+		visibility: visible;
+		opacity: 1;
+		padding-right: 0.8rem;
+	}
+	
+
+	.nav-header nav, .activated nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 0.5s;
+		transform: translateY(-200vh); 
+		/* IMPORTANTE */
+		background-color: rgb(27, 27, 27);
+		color: aliceblue;
+		
+        
+	}
+
+	.nav-header .responsive_nav, .activated .responsive_nav {
+		transform: none;
+		width: 100%;
+	} .nav-ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	} .nav-ul li {
+		padding:1rem 0 1rem 0;
+		width: 100%;
+	}
+	.nav-header > nav {
+		width: 100%;
+	}
+
+	.nav .nav-close-btn {
+		position: absolute;
+		
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.nav a {
+		font-size: 1.5rem;
+		color: azure;
+	}
+}

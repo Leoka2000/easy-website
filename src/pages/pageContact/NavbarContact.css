@@ -1,0 +1,32 @@
+.nav-header-contact {
+	height: 85px;
+	display: flex;
+	font-size: 1.5rem;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.nav-contact {
+	color: black
+
+}
+.nav-contact > ul {
+	list-style: none;
+	margin-right: 2rem;
+	padding-top: 1.5rem;
+}
+.nav-contact > ul > li > {
+	list-style: none;
+	
+}
+.nav-contact > ul > li > a {
+	
+	color: black;
+	transition: 0.4s;
+	
+	
+}
+.nav-contact > ul > li > a:hover {
+	color: rgb(106, 34, 173);
+	
+}
